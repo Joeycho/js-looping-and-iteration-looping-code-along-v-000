@@ -9,9 +9,9 @@ function printBadges(array){
 function tailsNeverFails(){
   tails = 0
   while (maybeTrue()) {
-    tails++  
+    tails++
   }
-  console.log(`You got ${tails} tails in a row!`)
+  return `You got ${tails} tails in a row!`
   function maybeTrue(){
     return Math.random() >= 0.5;
   }
